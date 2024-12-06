@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+.background_of_social_card {
+    background-color: #1A1A1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+    height: 100vh;
+    overflow: hidden; /*Prevent unwanted scrolling*/
+}
+
+.social_card{
+    width: 30%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #343131;
+    border-radius: 15px;
+}
+
+.profile_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile_image *{
+    width: 7vw;
+    border-radius: 60px;
+}
+
+.who_i_am{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name{
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+
+#city{
+    color: #FFEB00;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: lighter;
+    margin: 0;
+    white-space: nowrap;
+
+}
+
+.career{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#my_career{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.social_networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    margin-bottom: 5px;
+}
+
+.social_network_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 30px;
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: #424242;
+    border: 1px solid rgb(239, 239, 190);
+    transition: all 0.2s;
+    margin: 4px;
+}
+
+.social_network_items:hover {
+    scale: 1.1;
+    background: #F6D6D6;
+    color: black;
+    border: 1px solid #B8001F;
+    cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px){
+
+    .background_of_social_card{
+        overflow: auto;
+    }
+
+    .profile_image *{
+        width: 5.5rem;
+    }
+    #my_career{
+        font-size: 0.9rem;
+    }
+
+    .social_network_items{
+        font-size:0.9rem;
+    }
+}
+
+
+@media (max-width: 1054px){
+    #my_career{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 831px){
+
+    .background_of_social_card{
+        overflow: auto;
+    }
+
+    .social_card{
+        width: 35%;
+    }
+
+    #name{
+       font-size: 1.8rem;
+    }
+
+    #city{
+        font-size: 1.2rem;
+    }
+
+    .profile_image *{
+        width: 5rem;
+    }
+
+    .social_network_items{
+        font-size:0.8rem;
+    }
+
+    #my_career{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media(max-width: 843px){
+
+    .social_card{
+        width: 35%;
+    }
+
+    #my_career{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    .social_card{
+        width: 38%;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    #name{
+        font-size: 1.7rem;
+    }
+
+    #city{
+        font-size: 1.1rem ;
+    }
+}
+
+@media (max-width: 736px){
+    #my_career{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 538px){
+
+    .social_card{
+        width: 40%;
+    }
+
+    #name{
+        font-size: 1.1rem;
+     }
+ 
+     #city{
+         font-size: 0.9rem;
+     }
+
+     #my_career{
+        font-size: 0.5rem;
+    }
+}
+
+
+@media (max-width: 425px){
+
+    .background_of_social_card{
+        overflow: auto;
+    }
+
+    .social_card{
+        width: 40%;
+    }
+
+    #name{
+        font-size: 1rem;
+     }
+ 
+     #city{
+         font-size: 0.8rem;
+     }
+ 
+    .profile_image *{
+        width: 3rem;
+        height: auto;
+    }
+
+    .social_network_items{
+        font-size:0.7rem;
+    }
+
+    #my_career{
+        font-size: 0.4rem;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .social_card{
+        width: 40%;
+    }
+
+    #name{
+        font-size: 1rem;
+     }
+ 
+     #city{
+         font-size: 0.7rem;
+     }
+}
