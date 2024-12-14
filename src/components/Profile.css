@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,95.4,200..1000;1,6..12,95.4,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background_of_social_card{
+    width: 30vw;
+    background-color: #1A1A1D;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.user_profile{
+    width: 5.5rem;
+    border-radius: 50%;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+h1{
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+.city{
+    margin-top: 0;
+    color: #FFE31A;
+}
+
+.my_career{
+    width: 100%;
+    text-align: center;
+}
+
+
+.social_media{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    gap: 1px;
+}
+
+
+a{
+    width: 25vw;
+    border: 1px solid #6A1E55;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+
+.icons , .front_icon{
+    transition: transform 0.3s ease;
+    color:white;
+    visibility: hidden;
+}
+ 
+a:hover .icons{
+    transform: scale(1.2);
+    margin-right: -60px;
+    visibility: visible;
+}
+
+a:hover .front_icon{
+    margin-right: -120px;
+    visibility: visible;
+}
+
+
+a:hover::after{
+    content: "";   /*Delete text*/
+    visibility: hidden;
+}
+
+a:hover{
+    background-color: #CB9DF0;
+    color: transparent;  /*Hide text*/
+    justify-content: center;
+}
+
+
+.signature{
+    font-family: "Caveat", cursive;
+    font-size: large ;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 1440px){
+    a{
+        height: 5vh;
+    }
+}
